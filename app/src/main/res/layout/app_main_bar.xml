@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    // código para Toolbar
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/color_degradado"
+        android:gravity="start|right"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:logo="@drawable/color_degradado"
+        app:navigationIcon="@drawable/chevron"
+        app:subtitle="@string/app_subtitle"
+        app:title="@string/app_title1" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
